@@ -1,29 +1,28 @@
-
 # Define Functions
-#Addition - Function
+# Addition - Function
 def addition (a, b):
         return a + b
 
-#Substraction - Function
+# Substraction - Function
 def substraction(a, b):
         return a - b
 
-#Multiplication - Function        
+# Multiplication - Function        
 def multiplication(a, b):
         return a * b
 
-#Division - Function
+# Division - Function
 def division(a, b):
         if b == 0:
                 print("You can not devide by 0\n")
         else:
                 return a / b 
 
-#Start of the Calculator
+# Start of the Calculator
 print("Welcome to the Calculator Application")
 print("You can add, substract, multipy and divide two numbers!\n")
 
-#User Input for Operator Choice /w validity check
+# User Input for Operator Choice /w validity check
 while True:
         operatorChoice = input("What do you want to do?\n+ for Addition\n- for Substraction\n* for Multiplication\n/ for Division\n\n")
 
@@ -34,10 +33,10 @@ while True:
         else:
                 print("Invalid Input, try again!\n\n")
 
-#User Input for Number Choice
+# User Input for Number Choice
 print("Now it is time to choose your numbers. Decimals are allowed!\n")
 
-#checking if Input is valid
+# checking if Input is valid
 while True:
         try:
                 InputNumberA = float(input("What is your first number? "))
@@ -51,7 +50,7 @@ print(f"Your first number is {InputNumberA} and your second number is {InputNumb
 print("Calculating ... \n")
 
 
-#Calculting the Result
+# Calculting the Result
 if operatorChoice == "+":
     result = addition(InputNumberA, InputNumberB)
 elif operatorChoice == "-":
