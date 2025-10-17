@@ -13,10 +13,7 @@ def multiplication(a, b):
 
 # Division - Function
 def division(a, b):
-        if b == 0:
-                print("You can not devide by 0\n")
-        else:
-                return a / b 
+        return a / b 
 
 # Start of the Calculator
 print("Welcome to the Calculator Application")
@@ -36,12 +33,20 @@ while True:
 # User Input for Number Choice
 print("Now it is time to choose your numbers. Decimals are allowed!\n")
 
-# checking if Input is valid
+# checking if Input is valid (repeats the input query when not a number)
 while True:
         try:
                 InputNumberA = float(input("What is your first number? "))
-                InputNumberB = float(input("What is your second number? "))
+                print("")
+
+                while True: # Second loop to check if division by 0
+                        InputNumberB = float(input("What is your second number? "))
+                        if operatorChoice == "/" and InputNumberB == 0:
+                                print("You cannot divide by 0. Please enter another number!\n")
+                        else:
+                                break
                 break
+
         except ValueError:
                print("Invalid Input, try again!\n")
 
