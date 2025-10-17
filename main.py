@@ -21,7 +21,9 @@ def division(a, b):
 
 #Start of the Calculator
 print("Welcome to the Calculator Application")
-print("You can add, substract, multipy and divide two numbers!")
+print("You can add, substract, multipy and divide two numbers!\n")
+
+#User Input for Operator Choice
 operatorChoice = input("What do you want to do? Type:\n+ for Addition\n- for Substraction\n* for Multiplication\n/ for Division\n\n")
 
 if operatorChoice == "+" or operatorChoice == "-" or operatorChoice == "*" or operatorChoice == "/":
@@ -29,13 +31,29 @@ if operatorChoice == "+" or operatorChoice == "-" or operatorChoice == "*" or op
 else:
         print("Invalid Input, try again!")
 
+#User Input for Number Choice
 print("Now it is time to choose your numbers. Decimals are allowed!")
 InputNumberA = float(input("What is your first number? "))
 InputNumberB = float(input("What is your second number? "))
 
 print(f"Your first number is {InputNumberA} and your second number is {InputNumberB}")
 
+if type(InputNumberA) == float and type(InputNumberB) == float:
+        print("Calculating ... ")
+else:
+        print("Invalid Input, try again!")
 
+#Calculting the Result
+if operatorChoice == "+":
+    result = addition(InputNumberA, InputNumberB)
+elif operatorChoice == "-":
+    result = substraction(InputNumberA, InputNumberB)
+elif operatorChoice == "*":
+    result = multiplication(InputNumberA, InputNumberB)
+elif operatorChoice == "/":
+    result = division(InputNumberA, InputNumberB)
+
+print(f"Your Result: {InputNumberA} {operatorChoice} {InputNumberB} = {result}")
 
 
 # Function testing Area
