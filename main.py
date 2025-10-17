@@ -29,6 +29,13 @@ if operatorChoice == "+" or operatorChoice == "-" or operatorChoice == "*" or op
 else:
         print("Invalid Input, try again!")
 
+print("Now it is time to choose your numbers. Decimals are allowed!")
+InputNumberA = float(input("What is your first number? "))
+InputNumberB = float(input("What is your second number? "))
+
+print(f"Your first number is {InputNumberA} and your second number is {InputNumberB}")
+
+
 
 
 # Function testing Area
