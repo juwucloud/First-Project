@@ -12,16 +12,19 @@ def substraction(a, b):
 def multiplication(a, b):
         return a * b
 
-#Devision - Function
-def devision(a, b):
+#Division - Function
+def division(a, b):
         if b == 0:
                 print("You can not devide by 0")
         else:
                 return a / b 
 
-        
+#Start of the Calculator
+print("Welcome to the Calculator Application")
+print("You can add, substract, multipy and divide two numbers!")
+operatorChoice = input("What do you want to do? Type:\n+ for Addition\n- for Substraction\n* for Multiplication\n/ for Division\n\n")
 
-
+print(f"Your Choice is: {operatorChoice}")
 
 
 # Function testing Area
@@ -32,6 +35,6 @@ def devision(a, b):
 # print(f"the multiplication result is: {multiplication_result}")
 # substraction_result = substraction(7,5)
 # print(f"The substraction result is: {substraction_result}")
-# devision_result = devision(8,4)
+# division_result = division(8,4)
 # print(f"The devision result is: {devision_result}")
 
