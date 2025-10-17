@@ -24,12 +24,14 @@ print("Welcome to the Calculator Application")
 print("You can add, substract, multipy and divide two numbers!\n")
 
 #User Input for Operator Choice
-operatorChoice = input("What do you want to do? Type:\n+ for Addition\n- for Substraction\n* for Multiplication\n/ for Division\n\n")
+while True:
+        operatorChoice = input("What do you want to do?\n+ for Addition\n- for Substraction\n* for Multiplication\n/ for Division\n\n")
 
-if operatorChoice == "+" or operatorChoice == "-" or operatorChoice == "*" or operatorChoice == "/":
-        print(f"Your Choice is: {operatorChoice}")
-else:
-        print("Invalid Input, try again!")
+        if operatorChoice == "+" or operatorChoice == "-" or operatorChoice == "*" or operatorChoice == "/":
+                print(f"Your Choice is: {operatorChoice}")
+                break
+        else:
+                print("Invalid Input, try again!\n\n")
 
 #User Input for Number Choice
 print("Now it is time to choose your numbers. Decimals are allowed!")
