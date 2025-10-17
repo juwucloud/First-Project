@@ -33,15 +33,20 @@ else:
 
 #User Input for Number Choice
 print("Now it is time to choose your numbers. Decimals are allowed!")
-InputNumberA = float(input("What is your first number? "))
-InputNumberB = float(input("What is your second number? "))
+
+#checking if Input is valid
+while True:
+        try:
+                InputNumberA = float(input("What is your first number? "))
+                InputNumberB = float(input("What is your second number? "))
+                break
+        except ValueError:
+               print("Invalid Input, try again!\n")
+
 
 print(f"Your first number is {InputNumberA} and your second number is {InputNumberB}")
+print("Calculating ... ")
 
-if type(InputNumberA) == float and type(InputNumberB) == float:
-        print("Calculating ... ")
-else:
-        print("Invalid Input, try again!")
 
 #Calculting the Result
 if operatorChoice == "+":
