@@ -16,4 +16,11 @@ def substraction(a, b):
 substraction_result = substraction(7,5)
 print(f"The substraction result is: {substraction_result}")
 
-
+def devision(a, b):
+        if b == 0:
+                print("You can not devide by 0")
+        else:
+                return a / b 
+        
+devision_result = devision(8,4)
+print(f"The devision result is: {devision_result}")
