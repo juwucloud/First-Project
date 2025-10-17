@@ -24,7 +24,11 @@ print("Welcome to the Calculator Application")
 print("You can add, substract, multipy and divide two numbers!")
 operatorChoice = input("What do you want to do? Type:\n+ for Addition\n- for Substraction\n* for Multiplication\n/ for Division\n\n")
 
-print(f"Your Choice is: {operatorChoice}")
+if operatorChoice == "+" or operatorChoice == "-" or operatorChoice == "*" or operatorChoice == "/":
+        print(f"Your Choice is: {operatorChoice}")
+else:
+        print("Invalid Input, try again!")
+
 
 
 # Function testing Area
