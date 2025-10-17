@@ -15,7 +15,7 @@ def multiplication(a, b):
 #Division - Function
 def division(a, b):
         if b == 0:
-                print("You can not devide by 0")
+                print("You can not devide by 0\n")
         else:
                 return a / b 
 
@@ -23,18 +23,19 @@ def division(a, b):
 print("Welcome to the Calculator Application")
 print("You can add, substract, multipy and divide two numbers!\n")
 
-#User Input for Operator Choice
+#User Input for Operator Choice /w validity check
 while True:
         operatorChoice = input("What do you want to do?\n+ for Addition\n- for Substraction\n* for Multiplication\n/ for Division\n\n")
 
         if operatorChoice == "+" or operatorChoice == "-" or operatorChoice == "*" or operatorChoice == "/":
-                print(f"Your Choice is: {operatorChoice}")
+                print("")
+                print(f"Your Choice is: {operatorChoice}\n")
                 break
         else:
                 print("Invalid Input, try again!\n\n")
 
 #User Input for Number Choice
-print("Now it is time to choose your numbers. Decimals are allowed!")
+print("Now it is time to choose your numbers. Decimals are allowed!\n")
 
 #checking if Input is valid
 while True:
@@ -46,8 +47,8 @@ while True:
                print("Invalid Input, try again!\n")
 
 
-print(f"Your first number is {InputNumberA} and your second number is {InputNumberB}")
-print("Calculating ... ")
+print(f"Your first number is {InputNumberA} and your second number is {InputNumberB}\n")
+print("Calculating ... \n")
 
 
 #Calculting the Result
