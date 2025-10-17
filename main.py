@@ -10,3 +10,10 @@ def multiplication(a, b):
 multiplication_result = multiplication(5,7)
 print(f"the multiplication result is: {multiplication_result}")
 
+def substraction(a, b):
+        return a - b
+
+substraction_result = substraction(7,5)
+print(f"The substraction result is: {substraction_result}")
+
+
