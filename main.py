@@ -37,7 +37,7 @@ def calculator():
         # checking if Input is valid (repeats the input query when not a number)
         while True:
                 try:
-                        InputNumberA = float(input("What is your first number? "))
+                        InputNumberA = float(input("What is your first number? ").replace(",", "."))
                         print("")
 
                         while True: # Second loop to check if division by 0
@@ -74,14 +74,13 @@ calculator()
 
 while True:
         again = input ("Do you want to calculate again? (y/n)" ).lower()
-        if again == "y":
+        if again in ["y", "yes"]:
                 calculator()
-        elif again == "n":
+        elif again in ["n", "no"]:
                 print("\n/Thank you for using the calculator. See you next time!")
                 break
         else:
                 print("Invalid input, please type 'y' or 'n'.")
-
 
 
 
